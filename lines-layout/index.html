@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Social Grid - Row size</title>
+	<style type="text/css">
+		body{
+			font-family: Arial;
+		}
+		.container{
+			display: grid;
+			grid-template-columns:[inicio] 1fr [linea2]1fr [linea3] 1fr [destacado-end]1fr [linea5] 1fr [descado2-end]1fr [linea7]1fr [final];
+			grid-template-rows:[inicio] 200px [linea2]200px[final];
+			/*grid-gap: 10px;*/
+			height: 100vh;
+			grid-gap: 5px;
+
+		}
+		.item{
+			background: lightblue;
+			padding: 10px;
+			border:1px solid red;
+		}
+		.item:nth-of-type(1){
+	/*		background: blue;
+			grid-column-start: 1;
+			grid-column-end: 3;*/
+			/*grid-column: 1/ span 3;
+			grid-row: 1/ span 2;*/
+			grid-column: inicio/destacado-end;
+			grid-row: inicio/final;
+		}
+		.item:nth-of-type(2){
+			/*grid-column: 4/ span 2;
+			grid-row: 1/ span 2;*/
+			grid-column: destacado-end/descado2-end;
+			grid-row: inicio/final;
+		}
+		.item:nth-of-type(3){
+			grid-column: descado2-end/final;
+			/*grid-column: 6/ span 2;*/
+		}
+
+	</style>
+</head>
+<body>
+	<section class="container">
+		<div class="item">item #1</div>
+		<div class="item">item #2</div>
+		<div class="item">item #3</div>
+		<div class="item">item #4</div>
+		<div class="item">item #5</div>
+
+	</section>
+</body>
+</html>
