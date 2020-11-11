@@ -1,3 +1,6 @@
 collums/debug.log
 rows/debug.log
+images/
 *debug.log
+*.jgp
+*.png
