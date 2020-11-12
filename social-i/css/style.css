@@ -2,6 +2,10 @@ body{
 	margin:0;
 	font-family: 'Pasion One', sans-serif;
 }
+.header-logo-home{
+	background:#28AAE2;
+	margin: 0px;
+}
 .post-list{
 	display: grid;
 	grid-template-columns: repeat(3, minmax(100px, 293px));
@@ -16,9 +20,11 @@ body{
 }
 .post-image{
 	margin: 0;
+	height: 100%
 }
 .post-image img{
 	width: 100%;
+	height: 100%;
 	vertical-align: top;
 }
 .post-overlay{
