@@ -5,6 +5,13 @@ body{
 .header-logo-home{
 	background:#28AAE2;
 	margin: 0px;
+	margin-bottom:20px;
+}
+.header-logo-home figure{
+	margin:0 auto;
+	display: block;
+	padding:5px;
+	
 }
 .post-list{
 	display: grid;
