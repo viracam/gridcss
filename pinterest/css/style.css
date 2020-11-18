@@ -1,3 +1,28 @@
+body{
+	margin:0;
+}
+.header-logo-home{
+	background:#28AAE2;
+	margin: 0px;
+	margin-bottom:20px;
+}
+.header-logo-home figure{
+	margin:0 auto;
+	display: block;
+	padding:5px;
+	
+}
+.logo{
+	display: block;
+	width: 77px;
+	margin:0 auto;
+}
+.container{
+	display:grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	grid-gap:5px;
+	justify-content: center;
+}
 .item{
 	border-radius:5px;
 	padding: 10px;
@@ -6,4 +31,10 @@
 }
 .item img{
 	max-width: 100%;
+}
+.level1{
+	grid-row-end:span 1;
+}
+.level2{
+	grid-row-end:span 2;
 }
